@@ -3,25 +3,25 @@
 # For the purpose of today's challenge, we'll say that the strings "nicole", "icolen", and "coleni" describe the same
 # necklace.
 
-#Generally, two strings describe the same necklace if you can remove some number of letters from the beginning of one,
+# Generally, two strings describe the same necklace if you can remove some number of letters from the beginning of one,
 # attach them to the end in their original ordering, and get the other string. Reordering the letters in some other way
 # does not, in general, produce a string that describes the same necklace.
 
-#Write a function that returns whether two strings describe the same necklace
+# Write a function that returns whether two strings describe the same necklace
 
 
-# def necklace(necklacea, necklaceb):
-#
-#     necklacea_doubled = necklacea + necklacea
-#
-#     if len(necklacea) != len(necklaceb):
-#         return False
-#
-#     return necklaceb in necklacea_doubled
-#
-#
-#
-# print(necklace('hannah', 'annahh'))
+def necklace(necklacea, necklaceb):
+
+    necklacea_doubled = necklacea + necklacea
+
+    if len(necklacea) != len(necklaceb):
+        return False
+
+    return necklaceb in necklacea_doubled
+
+
+
+print(necklace('hannah', 'annahh'))
 #
 
 # Optional Bonus 1
@@ -49,7 +49,6 @@ def repeated_necklace(string):
         print(de)
 
     return counter
-
 
 print(repeated_necklace('hannahhannah'))
 
